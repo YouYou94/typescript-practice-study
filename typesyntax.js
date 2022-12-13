@@ -19,5 +19,26 @@ function getStudentDetails(studentID) {
 console.log(getStudentDetails(studentID));
 studentID = 101010;
 studentName = '병현유';
-age = '29'; // 타입 명시를 number로 하였기 때문에 오류.
-marry = '기혼'; // 타입 명시를 boolean으로 하였기 때문에 오류.
+var youyou94 = {
+    id: 941206,
+    name: '병현',
+    age: 30,
+    gender: '남자 아님 여자',
+    isMarry: true,
+    job: '무직'
+};
+var getStudent = function () {
+    return {
+        id: 130820,
+        name: '유병현',
+        age: 29,
+        gender: '남성',
+        isMarry: false
+    };
+};
+console.log(getStudent());
+var saveStudent = function (student) {
+    return student;
+};
+console.log(saveStudent(getStudent()));
+console.log(saveStudent(youyou94));
