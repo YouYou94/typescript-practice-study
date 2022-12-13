@@ -1,5 +1,8 @@
-function Add(num1:number, num2:number):number {
-    return num1 + num2;
+let num1:number = 10;
+let num2:number = 20;
+
+function Add(x:number, y:number):number {
+    return x + y;
 }
 
-console.log(Add(1,2));
+console.log(Add(num1,num2));
